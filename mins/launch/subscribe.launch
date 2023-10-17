@@ -9,6 +9,4 @@
         <param name="config_path"       type="str"  value="$(find mins)/config/$(arg config)/config.yaml" />
     </node>
 
-    <!-- ROS BAG -->
-    <node pkg="rosbag" type="play" name="rosbag" output="screen" args="--clock -s $(arg bag_start_time) $(arg rosbag)"/>
 </launch>
